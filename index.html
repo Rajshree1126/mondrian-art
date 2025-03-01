@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      width: 1030px;
+      height: 740px;
+      margin: 0;
+      display: grid;
+      grid-template-columns:100px 400px 100px 80px 200px 100px ;
+      grid-template-rows: 100px 80px 300px 100px 120px;
+      background-color: black;
+      gap: 10px;
+    }
+    .yellow{
+      background-color: #F9D01E;
+      
+    }
+    .red{
+      background-color: #E72F24;
+      
+    }
+    .blue{
+      background-color: #004592;
+      
+    }
+    .r1{
+      grid-column-start:3 ;
+      grid-column-end:4 ;
+    }
+    .y2{
+      grid-area: 1/6/3/7;
+    }
+    .r2{
+      grid-area: 2/2/4/2;
+    }
+    .y3{
+      grid-area: 2/4/3/5;
+    }
+    .b1{
+      grid-area: 2/5/3/6;
+    }
+    .y4{
+      grid-area: 3/4/5/5;
+    }
+    .b2{
+      grid-area: 4/1;
+    }
+    .b3{
+      grid-area: 5;
+    }
+    .r3{
+      grid-area: 5/5/6/7;
+    }
+    .container>.em{
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="yellow y1"></div>
+    <div class="em"></div>
+    <div class="red r1"></div>
+    <div class="em"></div>
+    <div class="em"></div>
+    <div class="yellow y2"></div>
+    <div class="em"></div>
+    <div class="red r2"></div>
+    <div class="em"></div>
+    <div class="yellow y3"></div>
+    <div class="blue b1"></div>
+    <div class="em"></div>
+    <div class="em"></div>
+    <div class="yellow y4"></div>
+    <div class="em"></div>
+    <div class="em"></div>
+    <div class="blue b2"></div>
+    <div class="em"></div>
+    <div class="em"></div>
+    <div class="em"></div>
+    <div class="em"></div>
+    <div class="blue b3"></div>
+    <div class="em"></div>
+    <div class="em"></div>
+    <div class="em"></div>
+    <div class="em"></div>
+
+    <div class="red r3"></div>
+  </div>
+  <!-- Write your HTML here -->
+</body>
+
+</html>
